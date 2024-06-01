@@ -7,7 +7,9 @@ const PageLayout = ({ children }) => {
     <div>
       <Navbar />
       {children}
-      <Footer />
+      <div className="mt-32">
+        <Footer />
+      </div>
     </div>
   );
 };

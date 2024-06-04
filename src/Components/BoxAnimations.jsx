@@ -45,7 +45,7 @@ const BoxAnimations = () => {
         <div
           className={`${
             activeBox === "box1" || activeBox === "box2" ? "h-52" : "h-32"
-          } transition-all duration-500 flex gap-3 mb-3 w-9/12 mx-auto`}
+          } transition-all duration-500 flex gap-3 mb-3 mx-auto`}
         >
           {boxes1.map((box) => (
             <div
@@ -73,7 +73,7 @@ const BoxAnimations = () => {
         <div
           className={`${
             activeBox === "box3" || activeBox === "box4" ? "h-52" : "h-32"
-          } transition-all duration-500 min-h-fit flex gap-3 mb-3 w-9/12 mx-auto`}
+          } transition-all duration-500 min-h-fit flex gap-3 mb-3 mx-auto`}
         >
           {boxes2.map((box) => (
             <div

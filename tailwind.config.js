@@ -12,6 +12,11 @@ export default {
       transitionTimingFunction: {
         'cubic': 'cubic-bezier(0.68, -0.55, 0.27, 1.55)',
       },
+      backgroundImage: {
+        'hero-image': "url('/heroimg.jpg')",
+        'software-dev-image': "url('/softwaredev.jpg')",
+        'core-dev-image': "url('/coredev.jpg')",
+      },
     },
   },
   plugins: [],

@@ -69,7 +69,7 @@ const Footer = () => {
       <div className="sm:w-2/5 flex sm:px-6 sm:border-t-0 border-white border-t-2 sm:border-l-2 flex-col gap-6 py-5">
         <div className="text-white font-semibold italic">MADE BY:</div>
         <div className="flex gap-4 sm:gap-14 sm:justify-start justify-between sm:flex-col">
-          <div className="flex flex-col">
+          <div className="flex flex-col justify-center">
             <a
               href="#"
               className="text-white font-semibold italic text-lg sm:text-xl"
@@ -81,20 +81,6 @@ const Footer = () => {
               className="text-white font-semibold italic"
             >
               +91-9013502528
-            </a>
-          </div>
-          <div className="flex flex-col">
-            <a
-              href="#"
-              className="text-white font-semibold italic text-lg sm:text-xl"
-            >
-              TALHA ANSARI
-            </a>
-            <a
-              href="https://wa.me/+919891541826"
-              className="text-white font-semibold italic"
-            >
-              +91-9891541826
             </a>
           </div>
         </div>

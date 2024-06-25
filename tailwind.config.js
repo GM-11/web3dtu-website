@@ -14,6 +14,8 @@ export default {
       },
       backgroundImage: {
         'hero-image': "url('/heroimg.jpg')",
+        'software-dev-image': "url('/softwaredev.jpg')",
+        'core-dev-image': "url('/coredev.jpg')",
       },
     },
   },

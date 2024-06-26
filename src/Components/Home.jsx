@@ -16,10 +16,14 @@ const Home = () => {
           <div className="sm:text-3xl text-2xl -mt-24 sm:-mt-16 italic font-black">
             The Web3 and Blockchain Society of DTU
           </div>
-          <div>
-            <button className="mt-6 pt-3 pb-4 px-16 sm:pt-7 sm:pb-8 w-fit sm:px-48 font-black bg-[#00336680] bg-opacity-45 italic text-2xl sm:text-3xl border-4 border-[#DB504A] rounded-[50px]">
+          <div className="mt-12">
+            <a
+              target="_blank"
+              href="https://chat.whatsapp.com/LP6Vn0A29uj7eFS2MCcjx2"
+              className="py-3 pb-4 px-16 sm:pt-7 sm:pb-8 w-fit sm:px-48 font-black bg-[#00336680] bg-opacity-45 italic text-2xl sm:text-3xl border-4 border-[#DB504A] rounded-[50px]"
+            >
               JOIN NOW
-            </button>
+            </a>
           </div>
         </div>
       </div>

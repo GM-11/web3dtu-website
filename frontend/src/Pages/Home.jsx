@@ -1,6 +1,6 @@
-import BoxAnimations from "./BoxAnimations";
-import Carousel from "./Carousel";
+import Carousel from "../Components/Carousel";
 import logo from "../assets/logo.svg";
+import BoxAnimations from "../Components/BoxAnimations";
 
 const Home = () => {
   return (

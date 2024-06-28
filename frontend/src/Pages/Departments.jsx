@@ -1,6 +1,10 @@
 const Departments = () => {
   return (
-    <div className="flex flex-col px-2 md:px-8 xl:px-0 gap-28 mt-24">
+    <div className="flex flex-col px-2 md:px-8 xl:px-0 gap-28 mt-12">
+      <div className="lg:text-5xl md:text-4xl text-3xl text-center  text-white">
+        Departments
+      </div>
+
       {/* ----------------------- Software ----------------------- */}
       <div className="flex flex-col xl:flex-row">
         <div className="bg-software-dev-image relative bg-no-repeat py-28 pl-5 md:pr-40 md:pl-8 md:py-64 rounded-l-[30px] xl:rounded-l-none rounded-r-[30px] bg-cover">

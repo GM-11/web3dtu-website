@@ -1,18 +1,6 @@
 import logo from "../assets/logo.svg";
 
 // eslint-disable-next-line react/prop-types
-const MemberComponent = ({ name, link, position }) => (
-  <a
-    href={link}
-    target="_blank"
-    className="flex flex-col cursor-pointer text-white font-semibold italic"
-  >
-    <p className="text-xl">{name}</p>
-    <p className="text-sm">{position}</p>
-  </a>
-);
-
-// eslint-disable-next-line react/prop-types
 const MadeByComponent = ({ name, link }) => (
   <a href={link} className="flex flex-col justify-center">
     <p href="#" className="text-white font-semibold italic text-lg sm:text-xl">
@@ -28,56 +16,45 @@ const madeBy = [
   },
 ];
 
-const members = [
+const socials = [
   {
-    name: "GOPAL MATHUR",
-    link: "https://www.linkedin.com/in/gopal-mathur-70044125a/",
-    position: "President",
+    image: "/socials/insta.png",
+    link: "https://www.instagram.com/web3dtu/",
   },
   {
-    name: "RHYTHM NARAYAN",
-    link: "https://www.linkedin.com/in/rhythm-narayan/",
-    position: "Vice Presisdent",
+    image: "/socials/linkedin.png",
+    link: "https://www.linkedin.com/company/web3dtu/",
   },
   {
-    name: "ANSH RASTOGI",
-    link: "https://www.linkedin.com/in/ansh-rastogi-539ab6233/",
-    position: "Head of Department",
-  },
-
-  {
-    name: "KRISHNA AGRAWAL",
-    link: "https://www.linkedin.com/in/krishna-agrawal-006640209",
-    position: "Head of Department",
-  },
-  {
-    name: "SAQIB MASOOD",
-    link: "https://www.linkedin.com/in/saqib-masood-0b569b1b4/",
-    position: "Developer Relations",
-  },
-  {
-    name: "ROMIT RANJAN",
-    link: "https://www.linkedin.com/in/romit-ranjan/",
-    position: "Treasurer",
+    image: "/socials/twitter.png",
+    link: "https://x.com/web3dtu",
   },
 ];
 
+// eslint-disable-next-line react/prop-types
+const SocialComponent = ({ image, link }) => {
+  return (
+    <a href={link} className="flex flex-col justify-center mx-5">
+      <img src={image} alt="social" className="w-10" />
+    </a>
+  );
+};
+
 const Footer = () => {
   return (
-    <div className="w-[full] px-6 sm:px-0 py-4 flex flex-col sm:flex-row mt-8 bg-[#003366]">
-      <div className="sm:w-2/5 flex gap-6  sm:border-r-2 sm:border-b-0 border-b-2 border-white justify-center">
-        <img src={logo} alt="logo" />
+    <footer className="w-[full] px-6 sm:px-0 py-4 flex flex-col sm:flex-row mt-8 bg-[#003366]">
+      <div className="flex gap-6 sm:w-[50%]   sm:border-r-2 sm:border-b-0 border-b-2 border-white justify-center">
+        <img src={logo} alt="logo" className="sm:w-1/2" />
       </div>
-      <div className="flex py-5 sm:px-6 w-full flex-col gap-6">
-        <div className="font-semibold text-white">GET IN TOUCH</div>
-        <div className="flex flex-col  sm:flex-wrap sm:flex-row gap-4 sm:gap-14 sm:justify-evenly">
-          {members.map((member, index) => {
+      <div className="flex py-5 sm:px-6 w-full flex-row  align-middle justify-between">
+        <h1 className="font-bold text-white sm:text-2xl">Follow us on</h1>
+        <div className="flex">
+          {socials.map((social, index) => {
             return (
-              <MemberComponent
+              <SocialComponent
                 key={index}
-                position={member.position}
-                name={member.name}
-                link={member.link}
+                image={social.image}
+                link={social.link}
               />
             );
           })}
@@ -97,7 +74,7 @@ const Footer = () => {
           })}
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -1,15 +1,22 @@
+import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
-    <div className="flex w-full sm:w-9/12 md:px-20 px-4 sm:gap-0 gap-4 flex-wrap py-8 my-14 justify-between sm:mx-auto rounded-2xl bg-[#003366]">
-      <a className=" text-white font-semibold" href="/departments">
+    <nav className="flex w-full md:px-20 sm:gap-0 gap-4 flex-wrap py-8  justify-between sm:mx-auto  bg-[#003366] text-lg">
+      <Link
+        className=" text-white font-semibold hover:underline"
+        to="/departments"
+      >
         DEPARTMENTS
-      </a>
-      <a className=" text-white font-semibold" href="/">
+      </Link>
+      <Link className=" text-white font-semibold -translate-x-7 hover:underline" to="/">
         HOME
-      </a>
-    </div>
+      </Link>
+
+      <Link className=" text-white font-semibold hover:underline" to="/team">
+        TEAM
+      </Link>
+    </nav>
   );
 };
 
 export default NavBar;
-  

@@ -2,8 +2,8 @@ import logo from "../assets/logo.svg";
 
 // eslint-disable-next-line react/prop-types
 const MadeByComponent = ({ name, link }) => (
-  <a href={link} className="flex flex-col justify-center">
-    <p href="#" className="text-white font-semibold italic text-lg sm:text-xl">
+  <a href={link} target="_blank" className="flex flex-col justify-center">
+    <p className="text-white font-semibold italic text-lg sm:text-xl">
       {name}
     </p>
   </a>
@@ -34,7 +34,7 @@ const socials = [
 // eslint-disable-next-line react/prop-types
 const SocialComponent = ({ image, link }) => {
   return (
-    <a href={link} className="flex flex-col justify-center mx-5">
+    <a href={link} target="_blank" className="flex flex-col justify-center mx-5">
       <img src={image} alt="social" className="w-10" />
     </a>
   );
